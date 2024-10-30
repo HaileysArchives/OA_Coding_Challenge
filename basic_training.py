@@ -6,6 +6,14 @@ print(f'a = {a}\nb = {b}')
 # map(int, ...): 리스트의 각 요소를 정수로 변환하여 a와 b에 각각 할당
 
 ## 문자열 반복해서 출력하기
+str, n = input().strip().split(' ')
+print(str*int(n))
+
+## stringstringstringstringstring
+str, n = input().strip().split('')
+n = int(n)
+
+print(f'{str}'*n)
 
 ## 대소문자 바꿔서 출력하기 
 
