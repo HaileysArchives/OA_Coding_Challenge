@@ -22,4 +22,26 @@ def solution(n):
 
     return answer
 
-## 피자 나눠 먹기2
+## 피자 나눠 먹기 (2) 
+import math
+
+def lcm(a, b):
+    return abs(a * b) // math.gcd(a, b)
+
+def solution(n):
+    if 1 <= n <= 100:
+        return lcm(6, n) // 6
+            
+# 최소공배수 함수 (Least Common Multiple) 
+def lcm(a, b):
+    max_num = max(a, b)
+    while True:
+        if max_num % a == 0 and max_num % b == 0:
+            return max_num 
+        max_num += 1 
+
+# other lcm function 
+import math
+
+def lcm(a, b):
+    return abs(a * b) // math.gcd(a, b) # gcd(Greatest, Common Divisor, 최대공약수)
