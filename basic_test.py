@@ -28,7 +28,7 @@ import math
 def lcm(a, b):
     return abs(a * b) // math.gcd(a, b)
 
-def solution(n):
+def div_pizza2(n):
     if 1 <= n <= 100:
         return lcm(6, n) // 6
             
@@ -45,3 +45,9 @@ import math
 
 def lcm(a, b):
     return abs(a * b) // math.gcd(a, b) # gcd(Greatest, Common Divisor, 최대공약수)
+
+## 피자 나눠 먹기 (3)
+def div_pizza3(slice, n):
+    return (n + slice - 1) // slice
+
+# (n + divisor - 1) // divisor는 자동으로 올림이 되는 공식
