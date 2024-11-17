@@ -23,7 +23,7 @@ print_triangle(3)
 # 피타고라스 정리 활용
 
 ## 짝수 홀수 개수를 담은 배열 
-def solution(num_list):
+def odd_even_count(num_list):
     answer = []
     pair_count = 0
     odd_count = 0
@@ -50,7 +50,7 @@ def solution(num_list):
     return answer
 
 ## 문자 반복 출력하기 
-def solution(my_string, n):
+def repeat_str(my_string, n):
     answer = ''
 
     for i in my_string:
